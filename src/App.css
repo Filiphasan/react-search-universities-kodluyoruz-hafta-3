@@ -1,0 +1,142 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1450px) {
+  #university-cards{
+    width: 90% !important;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #university-cards{
+    width: 90% !important;
+  }
+  .university-container {
+    width:45% !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  #university-cards{
+    width: 90% !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  #university-cards{
+    width: 80% !important;
+  }
+  .university-container {
+    width:100% !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  #university-cards{
+    width: 95% !important;
+  }
+  #header h1{
+    font-size: 3rem !important;
+  }
+}
+html{
+  box-sizing: border-box;
+  border: 0;
+  font-size: 10px;
+}
+.App {
+  min-height: 100vh;
+  padding: 4rem 0;
+  width: 100%;
+  color: #383e56;
+  margin: 0 auto;
+  background-color: #9fb8ad;
+}
+#header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#header h1{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 5rem;
+  padding: 0 0 2rem 0;
+}
+.logo{
+  cursor: pointer;
+  height: 40vmin;
+  transition: all 1.5s;
+  transform: rotateY(0deg);
+}
+.logo:hover{
+  transform: rotateY(180deg);
+}
+.search-bar input{
+  width: 100%;
+  font-size: 2rem;
+  border: solid .35rem #383e56;
+  padding: 1rem 2rem;
+  color: #383e56;
+  border-radius: .75rem;
+  background-color: #9fb8ad;
+}
+.search-bar input:focus{
+  box-shadow: 0 19px 38px #383e56, 0 15px 12px #383e56;
+}
+#university-cards{
+  padding: 10rem 0;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.university-container {
+	color:#fff;
+	width:30%;
+    margin: 3rem 0;
+}
+
+.university {
+	background-color: #fff;
+	border-radius: 10px;
+	display: flex;
+	max-width: 100%;
+	overflow: hidden;
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.university h6 {
+	opacity: 0.6;
+	margin: 0;
+	letter-spacing: 1px;
+    font-size: 1rem;
+	text-transform: uppercase;
+}
+
+.university h2 {
+	letter-spacing: 1px;
+	margin: 10px 0;
+    font-size: 1.75rem;
+}
+
+.university-preview {
+	background-color: #383e56;
+	color: #fff;
+	padding: 30px;
+	max-width: 250px;
+}
+.university-preview a{
+	color:#fff;
+	text-decoration:none;
+}
+.university-preview a:hover{
+	text-decoration:underline;
+}
+
+.university-info {
+	padding: 30px;
+	position: relative;
+	width: 100%;
+	background-color:#fb743e;
+}
